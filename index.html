@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app> <!--all Angular code/tags in html will be rendered-->
+  <head>
+    <meta charset="utf-8">
+    <title>{{greeting}} World</title>
+  </head>
+  <body>
+    <p>{{1 + 6}}</p>
+      <br>
+      <p>Say something about the world <input type = "text" ng-model = "greeting" ng-init= "greeting ='Hello, '"></p><!--ng-model == dynamic variable-->
+      <p>{{greeting}} world!</p> <!--call dynamic variable within {{}}-->
+      <script type = "text/javascript" src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+  </body>
+</html>
