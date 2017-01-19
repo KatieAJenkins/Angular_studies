@@ -1,0 +1,21 @@
+angular.module('app', [])
+  .component('myComponent', {
+    template: `
+      <button ng-click="$ctrl.tab=1">Tab 1</button>
+      <button ng-click="$ctrl.tab=2">Tab 2</button>
+
+      <div ng-if="$ctrl.tab == 1">
+        Tab 1
+      </div>
+
+      <div ng-if="$ctrl.tab == 2">
+        Tab 2
+      </div>
+    `,
+    controller: function () {
+      const vm = this
+      vm.$onInit = function () {
+        vm.tab = 1
+      }
+    }
+  })
